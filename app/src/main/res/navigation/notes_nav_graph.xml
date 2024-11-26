@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/notes_nav_graph"
+    app:startDestination="@id/notes_list">
+
+    <fragment
+        android:id="@+id/notes_list"
+        android:name="com.almazoid.notes.NotesListFragment"
+        android:label="NotesListFragment" >
+        <action
+            android:id="@+id/navigate_to_note_detail"
+            app:destination="@id/note_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/note_detail"
+        android:name="com.almazoid.notes.NoteDetailFragment"
+        android:label="NoteDetailFragment" >
+        <argument
+            android:name="note_id"
+            app:argType="string" />
+    </fragment>
+</navigation>
