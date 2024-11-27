@@ -2,12 +2,12 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/notes_nav_graph"
-    app:startDestination="@id/notes_list">
+    app:startDestination="@id/notes">
 
     <fragment
-        android:id="@+id/notes_list"
-        android:name="com.almazoid.notes.NotesListFragment"
-        android:label="NotesListFragment" >
+        android:id="@+id/notes"
+        android:name="com.almazoid.notes.NotesFragment"
+        android:label="Notes" >
         <action
             android:id="@+id/navigate_to_note_detail"
             app:destination="@id/note_detail" />
